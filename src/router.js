@@ -12,6 +12,7 @@ import ListarPersonal from './views/Personal.vue'
 
 
 
+
 const routes = [
   { path: '/', component: Dashboard },
   { path: '/tickets', component: Tickets },
@@ -21,7 +22,7 @@ const routes = [
   
   //rutas de personal
   { path: '/personal/crear', component: CrearPersonal },
-  { path: '/personal/editar ', component: EditarPersonal },
+  { path: '/personal/editar/:id',name:'EditarPersonal', component: EditarPersonal},
   { path: '/personal', component: ListarPersonal }
 ];
 
